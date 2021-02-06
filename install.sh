@@ -21,10 +21,7 @@ sudo apt update -y
 sudo apt-cache policy docker-ce
 
 # finally, install Docker:
-sudo apt install docker-ce
-
-# check status
-sudo systemctl status docker
+sudo apt -y install docker-ce
 
 # done installing docker
 # now to install docker compose
@@ -39,5 +36,8 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 # verification
 sudo docker-compose --version
+
+# check status of docker
+sudo systemctl status docker
 
 # done enjoy

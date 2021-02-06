@@ -1,0 +1,1 @@
+# sample is to install postgresql using docker-compose

@@ -4,7 +4,7 @@
 sudo apt update -y
 
 # install prerequiste packages
-sudo apt install apt-transport-https ca-certificates curl software-properties-common
+sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
 
 # then add the GPG key for the official Docker repository to your system:
 sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -28,7 +28,7 @@ sudo apt -y install docker-ce
 
 # We’ll check the current release and if necessary, update it in the command below:
 # replace the version below: check the latest here: https://github.com/docker/compose/releases
-sudo curl -L https://github.com/docker/compose/releases/download/1.28.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+sudo curl -L https://github.com/docker/compose/releases/download/1.29.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 
 
 # set permissions

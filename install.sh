@@ -37,10 +37,10 @@ sudo chmod +x /usr/local/bin/docker-compose
 # verification
 sudo docker-compose --version
 
-# check status of docker
-sudo systemctl status docker
-
 # to run docker command without sudo privilege
 sudo usermod -aG docker $USER
+
+# check status of docker
+sudo systemctl status docker
 
 # done enjoy

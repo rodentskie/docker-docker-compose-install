@@ -28,7 +28,7 @@ sudo apt -y install docker-ce
 
 # We’ll check the current release and if necessary, update it in the command below:
 # replace the version below: check the latest here: https://github.com/docker/compose/releases
-sudo curl -L https://github.com/docker/compose/releases/download/2.1.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+sudo curl -L https://github.com/docker/compose/releases/download/2.2.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 
 
 # set permissions
@@ -39,5 +39,8 @@ sudo docker-compose --version
 
 # check status of docker
 sudo systemctl status docker
+
+# to run docker command without sudo privilege
+sudo usermod -aG docker $USER
 
 # done enjoy
